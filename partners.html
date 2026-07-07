@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partner Schools | eTwinning</title>
+
+    <!-- Your website CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Map CSS -->
+    <link rel="stylesheet" href="partners.css">
+
+    <!-- Leaflet -->
+    <link rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+</head>
+
+<body>
+
+<header class="site">
+  <nav class="nav">
+    <a class="brand" href="index.html">
+      <img src="assets/logo.png" alt="eTwinning logo">
+    </a>
+    <div class="navlinks">
+      <a href="index.html">Home</a>
+      <a href="students.html">Students presentation</a>
+      <a href="teachers.html">Teachers Presentation</a>
+      <a href="partners.html" class="active">Partners</a>
+      <!--  <a href="gallery.html">Gallery</a>
+          <a href="team.html">Team</a>-->
+    </div>
+  </nav>
+</header>
+<section class="page-hero">
+    <div class="wrap">
+      <p class="eyebrow">Meet Our Partners</p>
+      <h1>Partners</h1>
+      <p class="hero-lede">
+        Explore the schools participating in our
+            eTwinning project. Click a school from the
+            list to discover its location and learn more.
+        </p>
+    </div>
+  </section>
+
+  <svg class="thread" viewBox="0 0 1180 64" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0,32 C 250,-10 350,74 590,32 S 930,-10 1180,32"/>
+    <circle cx="590" cy="32" r="5"/>
+  </svg>
+
+
+<section class="partners-layout">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <h2>Schools</h2>
+
+        <div class="school-list">
+
+            <button class="school-card"
+                data-lat="33.95922739286105"
+                data-lng="10.00195353885024">
+
+                <span class="flag">🇹🇳</span>
+
+                <div>
+
+                    <h3>Ecole Chobene 2</h3>
+
+                    <p>Metouia, Tunisia</p>
+
+                </div>
+
+            </button>
+
+            <button class="school-card"
+                data-lat="34.79085215784231"
+                data-lng="10.7793613910636">
+
+                <span class="flag">🇹🇳</span>
+
+                <div>
+
+                    <h3>Ecole Ahmed Tlili</h3>
+
+                    <p>Tunisia</p>
+
+                </div>
+
+            </button>
+
+            <button class="school-card"
+                data-lat="34.42370800007443"
+                data-lng="8.787485106726303">
+
+                <span class="flag">🇹🇳</span>
+
+                <div>
+
+                    <h3>College Ibn Jazzar</h3>
+
+                    <p>Tunisia</p>
+
+                </div>
+
+            </button>
+
+            <button class="school-card"
+                data-lat="37.73065520026696"
+                data-lng="14.93314090458315">
+
+                <span class="flag">🇮🇹</span>
+
+                <div>
+
+                    <h3>Piazza Duomo</h3>
+
+                    <p>Italy</p>
+
+                </div>
+
+            </button>
+
+        </div>
+
+    </aside>
+
+    <!-- Map -->
+
+    <div class="map-section">
+
+        <div id="map"></div>
+
+    </div>
+
+</section>
+
+
+<footer class="site">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="eTwinning logo">
+      </div>
+      <div class="footer-links">
+        <div>
+          <h4>Site</h4>
+          <a href="index.html">Home</a>
+          <a href="students.html">Students presentation</a>
+          <a href="teachers.html">Teachers Presentation</a>
+          <a href="partners.html">Partners</a>
+          <!--  <a href="gallery.html">Gallery</a>
+          <a href="team.html">Team</a>-->
+        </div>
+        <div>
+          <h4>Get involved</h4>
+          <a href="team.html">Contact a coordinator</a>
+          <a href="projects.html">Propose a project</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 eTwinning School Community. Built by students, for students.</span>
+      <span>Made with the eTwinning platform</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script src="partners.js"></script>
+
+</body>
+</html>

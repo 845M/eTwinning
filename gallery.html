@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery — eTwinning</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site">
+  <nav class="nav">
+    <a class="brand" href="index.html">
+      <img src="assets/logo.png" alt="eTwinning logo">
+    </a>
+    <div class="navlinks">
+      <a href="index.html">Home</a>
+      <a href="students.html">Students presentation</a>
+      <a href="teachers.html">Teachers Presentation</a>
+      <a href="partners.html">Partners</a>
+      <!--  <a href="gallery.html">Gallery</a>
+          <a href="team.html">Team</a>-->
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="eyebrow">From the classroom</p>
+      <h1>Gallery</h1>
+      <p class="hero-lede">Moments from this year's exchanges — video calls, joint artwork, and finished projects. The tiles below are placeholders: swap in your own photos and captions.</p>
+    </div>
+  </section>
+
+  <svg class="thread" viewBox="0 0 1180 64" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0,32 C 250,74 350,-10 590,32 S 930,74 1180,32"/>
+    <circle cx="590" cy="32" r="5"/>
+  </svg>
+
+  <section style="padding-top:0;">
+    <div class="wrap">
+
+      <div class="gallery-filter" role="group" aria-label="Filter gallery by project">
+        <button class="active" data-filter="all">All</button>
+        <button data-filter="skies">Skies Over Two Cities</button>
+        <button data-filter="tales">Tales We Both Tell</button>
+        <button data-filter="market">Market Day, Two Ways</button>
+        <button data-filter="science">Kitchen Table Science</button>
+      </div>
+
+      <div class="gallery-grid" id="galleryGrid">
+
+        <figure class="tile c1" data-cat="skies">
+          <div class="fig"><svg viewBox="0 0 24 24" fill="none" stroke="#241457" stroke-width="1.6"><path d="M4 17a4 4 0 0 1 0-8 5 5 0 0 1 9.6-1.5A4.5 4.5 0 0 1 19 17H4Z"/></svg></div>
+          <figcaption>Video call: comparing this week's forecast<small>Skies Over Two Cities · Vaasa, Finland</small></figcaption>
+        </figure>
+
+        <figure class="tile c2" data-cat="tales">
+          <div class="fig"><svg viewBox="0 0 24 24" fill="none" stroke="#f2be22" stroke-width="1.6"><path d="M4 19.5V6a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v13.5"/><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H17"/></svg></div>
+          <figcaption>Illustrating the borrowed folk-tale<small>Tales We Both Tell · Braga, Portugal</small></figcaption>
+        </figure>
+
+        <figure class="tile c3" data-cat="market">
+          <div class="fig"><svg viewBox="0 0 24 24" fill="none" stroke="#241457" stroke-width="1.6"><path d="M4 8h16l-1.5 10.5a2 2 0 0 1-2 1.5H7.5a2 2 0 0 1-2-1.5L4 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg></div>
+          <figcaption>Photographing the weekend market stalls<small>Market Day, Two Ways · Chania, Greece</small></figcaption>
+        </figure>
+
+        <figure class="tile c4" data-cat="science">
+          <div class="fig"><svg viewBox="0 0 24 24" fill="none" stroke="#241457" stroke-width="1.6"><path d="M9 3h6M10 3v6.5L4.5 19a2 2 0 0 0 1.7 3h11.6a2 2 0 0 0 1.7-3L14 9.5V3"/></svg></div>
+          <figcaption>Filming the density experiment<small>Kitchen Table Science · Kraków, Poland</small></figcaption>
+        </figure>
+
+        <figure class="tile c5" data-cat="skies">
+          <div class="fig"><svg viewBox="0 0 24 24" fill="none" stroke="#f2be22" stroke-width="1.6"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg></div>
+          <figcaption>Charting a month of temperature data<small>Skies Over Two Cities · Vaasa, Finland</small></figcaption>
+        </figure>
+
+        <figure class="tile c6" data-cat="tales">
+          <div class="fig"><svg viewBox="0 0 24 24" fill="none" stroke="#241457" stroke-width="1.6"><path d="M4 6h16M4 12h16M4 18h10"/></svg></div>
+          <figcaption>Printing the finished bilingual anthology<small>Tales We Both Tell · Braga, Portugal</small></figcaption>
+        </figure>
+
+        <figure class="tile c2" data-cat="market">
+          <div class="fig"><svg viewBox="0 0 24 24" fill="none" stroke="#f2be22" stroke-width="1.6"><path d="M12 3a9 9 0 1 0 9 9"/><path d="M12 3v9l6 3"/></svg></div>
+          <figcaption>Recipe swap over video call<small>Market Day, Two Ways · Chania, Greece</small></figcaption>
+        </figure>
+
+        <figure class="tile c1" data-cat="science">
+          <div class="fig"><svg viewBox="0 0 24 24" fill="none" stroke="#241457" stroke-width="1.6"><path d="M10 2v6.5L4.8 18a1.6 1.6 0 0 0 1.4 2.4h11.6a1.6 1.6 0 0 0 1.4-2.4L14 8.5V2"/><path d="M8.5 15h7"/></svg></div>
+          <figcaption>Comparing results across two kitchens<small>Kitchen Table Science · Kraków, Poland</small></figcaption>
+        </figure>
+
+        <figure class="tile c3" data-cat="skies">
+          <div class="fig"><svg viewBox="0 0 24 24" fill="none" stroke="#241457" stroke-width="1.6"><path d="M17.5 19H9a5 5 0 1 1 1.3-9.8A6 6 0 0 1 22 12.5a4 4 0 0 1-4.5 6.5Z"/></svg></div>
+          <figcaption>Recording the joint weather bulletin<small>Skies Over Two Cities · Vaasa, Finland</small></figcaption>
+        </figure>
+
+      </div>
+
+      <p class="note-card">Placeholder gallery — replace each tile's icon and caption with your own project photos and drop them into the <code>assets</code> folder.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="eTwinning logo">
+      </div>
+      <div class="footer-links">
+        <div>
+          <h4>Site</h4>
+          <a href="index.html">Home</a>
+          <a href="students.html">Students presentation</a>
+          <a href="teachers.html">Teachers Presentation</a>
+          <a href="partners.html">Partners</a>
+          <!--  <a href="gallery.html">Gallery</a>
+          <a href="team.html">Team</a>-->
+        </div>
+        <div>
+          <h4>Get involved</h4>
+          <a href="team.html">Contact a coordinator</a>
+          <a href="projects.html">Propose a project</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 eTwinning School Community. Built by students, for students.</span>
+      <span>Made with the eTwinning platform</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const buttons = document.querySelectorAll('.gallery-filter button');
+  const tiles = document.querySelectorAll('#galleryGrid .tile');
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      buttons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.dataset.filter;
+      tiles.forEach(tile => {
+        tile.style.display = (filter === 'all' || tile.dataset.cat === filter) ? '' : 'none';
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
